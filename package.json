@@ -1,0 +1,15 @@
+{
+    "name": "ci-install",
+    "version": "0.0.1",
+
+    "description": "An easy to use installer for CodeIgniter",
+    "author": "Jack Vial",
+    "engines": {
+      "node": ">=0.10"
+    },
+    "dependencies": {
+    },
+    "bin": {
+      "ci-install": "ci-install.js"
+    }
+}
