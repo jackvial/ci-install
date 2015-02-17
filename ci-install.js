@@ -54,7 +54,7 @@ function handleDownloadComplete() {
 
         // Remove the old directory
         rimraf('./CodeIgniter-2.2.1', function() {
-            console.log(' Installation Complete');
+            console.log(' Successfully installed CodeIgniter-2.2.1');
         });
     });
 }
@@ -63,6 +63,9 @@ function handleDownloadComplete() {
 request
     .get('https://github.com/bcit-ci/CodeIgniter/archive/2.2.1.zip')
     .on('response', handleResponse)
+    .on('error', function(error) {
+    	console.log(error);
+    })
     .on('data', function(chunk) {
 
         // Update the progress bar

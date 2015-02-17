@@ -20,8 +20,13 @@
 5 silly package data   main: 'ci-install.js',
 5 silly package data   devDependencies: {},
 5 silly package data   scripts: { test: 'echo "Error: no test specified" && exit 1' },
-5 silly package data   keywords: [ 'CodeIgniter', 'CI', 'installer', 'install', '2', '2.2.1' ],
-5 silly package data   license: 'MIT' }
+5 silly package data   keywords: [ 'CodeIgniter', 'CI', 'install', 'installer', '2', '2.2.1' ],
+5 silly package data   license: 'MIT',
+5 silly package data   repository:
+5 silly package data    { type: 'git',
+5 silly package data      url: 'https://github.com/jackvial/ci-install.git' },
+5 silly package data   bugs: { url: 'https://github.com/jackvial/ci-install/issues' },
+5 silly package data   homepage: 'https://github.com/jackvial/ci-install' }
 6 info init written successfully
 7 error Error: EACCES, open '/home/jack/cli_tools/ci-install/package.json'
 7 error  { [Error: EACCES, open '/home/jack/cli_tools/ci-install/package.json']
