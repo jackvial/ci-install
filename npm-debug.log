@@ -1,0 +1,895 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'mv', '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 warn package.json ci-install@0.0.1 No repository field.
+6 warn package.json ci-install@0.0.1 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'mv', null ]
+9 verbose cache add name=undefined spec="mv" args=["mv",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'mv',
+10 verbose parsed url   path: 'mv',
+10 verbose parsed url   href: 'mv' }
+11 silly lockFile 362d60cb-mv mv
+12 verbose lock mv /home/jack/.npm/362d60cb-mv.lock
+13 silly lockFile 362d60cb-mv mv
+14 silly lockFile 362d60cb-mv mv
+15 verbose addNamed [ 'mv', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 62a1a09b-mv mv@
+18 verbose lock mv@ /home/jack/.npm/62a1a09b-mv.lock
+19 silly addNameRange { name: 'mv', range: '*', hasData: false }
+20 verbose request where is /mv
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 7ef1081efd7d4c00
+23 verbose url raw /mv
+24 verbose url resolving [ 'https://registry.npmjs.org/', './mv' ]
+25 verbose url resolved https://registry.npmjs.org/mv
+26 verbose request where is https://registry.npmjs.org/mv
+27 info trying registry request attempt 1 at 17:08:33
+28 http GET https://registry.npmjs.org/mv
+29 http 200 https://registry.npmjs.org/mv
+30 silly registry.get cb [ 200,
+30 silly registry.get   { date: 'Mon, 16 Feb 2015 22:08:38 GMT',
+30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 silly registry.get     etag: '"2VU4KMOKBFO5HXRWNGTWGR1ER"',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     'cache-control': 'max-age=60',
+30 silly registry.get     'content-length': '10701',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     'x-served-by': 'cache-atl6234-ATL',
+30 silly registry.get     'x-cache': 'HIT',
+30 silly registry.get     'x-cache-hits': '1',
+30 silly registry.get     'x-timer': 'S1424124518.328944,VS0,VE74',
+30 silly registry.get     vary: 'Accept',
+30 silly registry.get     'keep-alive': 'timeout=10, max=50',
+30 silly registry.get     connection: 'Keep-Alive' } ]
+31 silly addNameRange number 2 { name: 'mv', range: '*', hasData: true }
+32 silly addNameRange versions [ 'mv',
+32 silly addNameRange   [ '0.0.1',
+32 silly addNameRange     '0.0.2',
+32 silly addNameRange     '0.0.3',
+32 silly addNameRange     '0.0.4',
+32 silly addNameRange     '0.0.5',
+32 silly addNameRange     '1.0.0',
+32 silly addNameRange     '2.0.0',
+32 silly addNameRange     '2.0.1',
+32 silly addNameRange     '2.0.2',
+32 silly addNameRange     '2.0.3' ] ]
+33 verbose addNamed [ 'mv', '2.0.3' ]
+34 verbose addNamed [ '2.0.3', '2.0.3' ]
+35 silly lockFile 1b192b1c-mv-2-0-3 mv@2.0.3
+36 verbose lock mv@2.0.3 /home/jack/.npm/1b192b1c-mv-2-0-3.lock
+37 silly lockFile 2b93178e-gistry-npmjs-org-mv-mv-2-0-3-tgz https://registry.npmjs.org/mv/-/mv-2.0.3.tgz
+38 verbose lock https://registry.npmjs.org/mv/-/mv-2.0.3.tgz /home/jack/.npm/2b93178e-gistry-npmjs-org-mv-mv-2-0-3-tgz.lock
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/mv/-/mv-2.0.3.tgz',
+39 verbose addRemoteTarball   'e9ab707d71dc38de24edcc637a8e2f5f480c7f32' ]
+40 info retry fetch attempt 1 at 17:08:39
+41 verbose fetch to= /tmp/npm-7138-KrswOvbY/registry.npmjs.org/mv/-/mv-2.0.3.tgz
+42 http GET https://registry.npmjs.org/mv/-/mv-2.0.3.tgz
+43 http 200 https://registry.npmjs.org/mv/-/mv-2.0.3.tgz
+44 silly lockFile 2b93178e-gistry-npmjs-org-mv-mv-2-0-3-tgz https://registry.npmjs.org/mv/-/mv-2.0.3.tgz
+45 silly lockFile 2b93178e-gistry-npmjs-org-mv-mv-2-0-3-tgz https://registry.npmjs.org/mv/-/mv-2.0.3.tgz
+46 silly lockFile 1b192b1c-mv-2-0-3 mv@2.0.3
+47 silly lockFile 1b192b1c-mv-2-0-3 mv@2.0.3
+48 silly lockFile 62a1a09b-mv mv@
+49 silly lockFile 62a1a09b-mv mv@
+50 silly resolved [ { name: 'mv',
+50 silly resolved     version: '2.0.3',
+50 silly resolved     description: 'fs.rename but works across devices. same as the unix utility \'mv\'',
+50 silly resolved     main: 'index.js',
+50 silly resolved     scripts: { test: 'mocha test/test.js --reporter spec' },
+50 silly resolved     repository: { type: 'git', url: 'git://github.com/andrewrk/node-mv.git' },
+50 silly resolved     keywords: [ 'mv', 'move', 'rename', 'device', 'recursive', 'folder' ],
+50 silly resolved     author: { name: 'Andrew Kelley' },
+50 silly resolved     license: 'MIT',
+50 silly resolved     engines: { node: '>=0.8.0' },
+50 silly resolved     devDependencies: { mocha: '~1.21.0' },
+50 silly resolved     dependencies: { mkdirp: '~0.5.0', ncp: '~0.6.0', rimraf: '~2.2.8' },
+50 silly resolved     bugs: { url: 'https://github.com/andrewrk/node-mv/issues' },
+50 silly resolved     homepage: 'https://github.com/andrewrk/node-mv',
+50 silly resolved     directories: { test: 'test' },
+50 silly resolved     _id: 'mv@2.0.3',
+50 silly resolved     dist:
+50 silly resolved      { shasum: 'e9ab707d71dc38de24edcc637a8e2f5f480c7f32',
+50 silly resolved        tarball: 'http://registry.npmjs.org/mv/-/mv-2.0.3.tgz' },
+50 silly resolved     _from: 'mv@',
+50 silly resolved     _npmVersion: '1.3.10',
+50 silly resolved     _npmUser: { name: 'superjoe', email: 'superjoe30@gmail.com' },
+50 silly resolved     maintainers: [ [Object] ],
+50 silly resolved     _shasum: 'e9ab707d71dc38de24edcc637a8e2f5f480c7f32',
+50 silly resolved     _resolved: 'https://registry.npmjs.org/mv/-/mv-2.0.3.tgz' } ]
+51 info install mv@2.0.3 into /home/jack/cli_tools/ci-install
+52 info installOne mv@2.0.3
+53 verbose node_modules/mv unbuild
+54 verbose tar unpack /home/jack/.npm/mv/2.0.3/package.tgz
+55 silly lockFile 61f8c921-tools-ci-install-node-modules-mv tar:///home/jack/cli_tools/ci-install/node_modules/mv
+56 verbose lock tar:///home/jack/cli_tools/ci-install/node_modules/mv /home/jack/.npm/61f8c921-tools-ci-install-node-modules-mv.lock
+57 silly lockFile afdc5490-me-jack-npm-mv-2-0-3-package-tgz tar:///home/jack/.npm/mv/2.0.3/package.tgz
+58 verbose lock tar:///home/jack/.npm/mv/2.0.3/package.tgz /home/jack/.npm/afdc5490-me-jack-npm-mv-2-0-3-package-tgz.lock
+59 silly gunzTarPerm modes [ '775', '664' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+64 silly gunzTarPerm extractEntry README.md
+65 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+66 silly gunzTarPerm extractEntry LICENSE
+67 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+68 silly gunzTarPerm extractEntry index.js
+69 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+70 silly gunzTarPerm extractEntry .travis.yml
+71 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+72 silly gunzTarPerm extractEntry test/test.js
+73 silly gunzTarPerm modified mode [ 'test/test.js', 420, 436 ]
+74 silly gunzTarPerm extractEntry test/a-file
+75 silly gunzTarPerm modified mode [ 'test/a-file', 420, 436 ]
+76 silly gunzTarPerm extractEntry test/a-folder/another-file
+77 silly gunzTarPerm modified mode [ 'test/a-folder/another-file', 420, 436 ]
+78 silly gunzTarPerm extractEntry test/a-folder/another-folder/file3
+79 silly gunzTarPerm modified mode [ 'test/a-folder/another-folder/file3', 420, 436 ]
+80 silly lockFile 61f8c921-tools-ci-install-node-modules-mv tar:///home/jack/cli_tools/ci-install/node_modules/mv
+81 silly lockFile 61f8c921-tools-ci-install-node-modules-mv tar:///home/jack/cli_tools/ci-install/node_modules/mv
+82 silly lockFile afdc5490-me-jack-npm-mv-2-0-3-package-tgz tar:///home/jack/.npm/mv/2.0.3/package.tgz
+83 silly lockFile afdc5490-me-jack-npm-mv-2-0-3-package-tgz tar:///home/jack/.npm/mv/2.0.3/package.tgz
+84 info preinstall mv@2.0.3
+85 verbose readDependencies using package.json deps
+86 verbose readDependencies using package.json deps
+87 verbose cache add [ 'ncp@~0.6.0', null ]
+88 verbose cache add name=undefined spec="ncp@~0.6.0" args=["ncp@~0.6.0",null]
+89 verbose parsed url { protocol: null,
+89 verbose parsed url   slashes: null,
+89 verbose parsed url   auth: null,
+89 verbose parsed url   host: null,
+89 verbose parsed url   port: null,
+89 verbose parsed url   hostname: null,
+89 verbose parsed url   hash: null,
+89 verbose parsed url   search: null,
+89 verbose parsed url   query: null,
+89 verbose parsed url   pathname: 'ncp@~0.6.0',
+89 verbose parsed url   path: 'ncp@~0.6.0',
+89 verbose parsed url   href: 'ncp@~0.6.0' }
+90 verbose cache add name="ncp" spec="~0.6.0" args=["ncp","~0.6.0"]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: '~0.6.0',
+91 verbose parsed url   path: '~0.6.0',
+91 verbose parsed url   href: '~0.6.0' }
+92 verbose addNamed [ 'ncp', '~0.6.0' ]
+93 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+94 silly lockFile d9d11154-ncp-0-6-0 ncp@~0.6.0
+95 verbose lock ncp@~0.6.0 /home/jack/.npm/d9d11154-ncp-0-6-0.lock
+96 verbose cache add [ 'rimraf@~2.2.8', null ]
+97 verbose cache add name=undefined spec="rimraf@~2.2.8" args=["rimraf@~2.2.8",null]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: 'rimraf@~2.2.8',
+98 verbose parsed url   path: 'rimraf@~2.2.8',
+98 verbose parsed url   href: 'rimraf@~2.2.8' }
+99 verbose cache add name="rimraf" spec="~2.2.8" args=["rimraf","~2.2.8"]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: '~2.2.8',
+100 verbose parsed url   path: '~2.2.8',
+100 verbose parsed url   href: '~2.2.8' }
+101 verbose addNamed [ 'rimraf', '~2.2.8' ]
+102 verbose addNamed [ null, '>=2.2.8-0 <2.3.0-0' ]
+103 silly lockFile 63346313-rimraf-2-2-8 rimraf@~2.2.8
+104 verbose lock rimraf@~2.2.8 /home/jack/.npm/63346313-rimraf-2-2-8.lock
+105 silly addNameRange { name: 'ncp', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+106 verbose cache add [ 'mkdirp@~0.5.0', null ]
+107 verbose cache add name=undefined spec="mkdirp@~0.5.0" args=["mkdirp@~0.5.0",null]
+108 verbose parsed url { protocol: null,
+108 verbose parsed url   slashes: null,
+108 verbose parsed url   auth: null,
+108 verbose parsed url   host: null,
+108 verbose parsed url   port: null,
+108 verbose parsed url   hostname: null,
+108 verbose parsed url   hash: null,
+108 verbose parsed url   search: null,
+108 verbose parsed url   query: null,
+108 verbose parsed url   pathname: 'mkdirp@~0.5.0',
+108 verbose parsed url   path: 'mkdirp@~0.5.0',
+108 verbose parsed url   href: 'mkdirp@~0.5.0' }
+109 verbose request where is /ncp
+110 verbose request registry https://registry.npmjs.org/
+111 verbose url raw /ncp
+112 verbose url resolving [ 'https://registry.npmjs.org/', './ncp' ]
+113 verbose url resolved https://registry.npmjs.org/ncp
+114 verbose request where is https://registry.npmjs.org/ncp
+115 info trying registry request attempt 1 at 17:08:42
+116 http GET https://registry.npmjs.org/ncp
+117 verbose cache add name="mkdirp" spec="~0.5.0" args=["mkdirp","~0.5.0"]
+118 verbose parsed url { protocol: null,
+118 verbose parsed url   slashes: null,
+118 verbose parsed url   auth: null,
+118 verbose parsed url   host: null,
+118 verbose parsed url   port: null,
+118 verbose parsed url   hostname: null,
+118 verbose parsed url   hash: null,
+118 verbose parsed url   search: null,
+118 verbose parsed url   query: null,
+118 verbose parsed url   pathname: '~0.5.0',
+118 verbose parsed url   path: '~0.5.0',
+118 verbose parsed url   href: '~0.5.0' }
+119 verbose addNamed [ 'mkdirp', '~0.5.0' ]
+120 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+121 silly lockFile 3880d7a6-mkdirp-0-5-0 mkdirp@~0.5.0
+122 verbose lock mkdirp@~0.5.0 /home/jack/.npm/3880d7a6-mkdirp-0-5-0.lock
+123 silly addNameRange { name: 'rimraf', range: '>=2.2.8-0 <2.3.0-0', hasData: false }
+124 silly addNameRange { name: 'mkdirp', range: '>=0.5.0-0 <0.6.0-0', hasData: false }
+125 verbose request where is /rimraf
+126 verbose request registry https://registry.npmjs.org/
+127 verbose url raw /rimraf
+128 verbose url resolving [ 'https://registry.npmjs.org/', './rimraf' ]
+129 verbose url resolved https://registry.npmjs.org/rimraf
+130 verbose request where is https://registry.npmjs.org/rimraf
+131 info trying registry request attempt 1 at 17:08:42
+132 verbose etag "7J30EAXMM9QV6NUKKAYOR0ZJB"
+133 http GET https://registry.npmjs.org/rimraf
+134 verbose request where is /mkdirp
+135 verbose request registry https://registry.npmjs.org/
+136 verbose url raw /mkdirp
+137 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+138 verbose url resolved https://registry.npmjs.org/mkdirp
+139 verbose request where is https://registry.npmjs.org/mkdirp
+140 info trying registry request attempt 1 at 17:08:42
+141 verbose etag "CL75KK6ZZI6UXVC9HS3VYDN5V"
+142 http GET https://registry.npmjs.org/mkdirp
+143 http 304 https://registry.npmjs.org/mkdirp
+144 silly registry.get cb [ 304,
+144 silly registry.get   { date: 'Mon, 16 Feb 2015 22:08:45 GMT',
+144 silly registry.get     server: 'Apache',
+144 silly registry.get     via: '1.1 varnish',
+144 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 22:07:57 GMT',
+144 silly registry.get     'cache-control': 'max-age=60',
+144 silly registry.get     etag: '"CL75KK6ZZI6UXVC9HS3VYDN5V"',
+144 silly registry.get     age: '53',
+144 silly registry.get     'x-served-by': 'cache-atl6234-ATL',
+144 silly registry.get     'x-cache': 'HIT',
+144 silly registry.get     'x-cache-hits': '5',
+144 silly registry.get     'x-timer': 'S1424124525.617034,VS0,VE0',
+144 silly registry.get     vary: 'Accept',
+144 silly registry.get     'content-length': '0',
+144 silly registry.get     'keep-alive': 'timeout=10, max=50',
+144 silly registry.get     connection: 'Keep-Alive' } ]
+145 verbose etag https://registry.npmjs.org/mkdirp from cache
+146 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.5.0-0 <0.6.0-0', hasData: true }
+147 silly addNameRange versions [ 'mkdirp',
+147 silly addNameRange   [ '0.0.1',
+147 silly addNameRange     '0.0.2',
+147 silly addNameRange     '0.0.3',
+147 silly addNameRange     '0.0.4',
+147 silly addNameRange     '0.0.5',
+147 silly addNameRange     '0.0.6',
+147 silly addNameRange     '0.0.7',
+147 silly addNameRange     '0.1.0',
+147 silly addNameRange     '0.2.0',
+147 silly addNameRange     '0.2.1',
+147 silly addNameRange     '0.2.2',
+147 silly addNameRange     '0.3.0',
+147 silly addNameRange     '0.3.1',
+147 silly addNameRange     '0.3.2',
+147 silly addNameRange     '0.3.3',
+147 silly addNameRange     '0.3.4',
+147 silly addNameRange     '0.3.5',
+147 silly addNameRange     '0.4.0',
+147 silly addNameRange     '0.4.1',
+147 silly addNameRange     '0.4.2',
+147 silly addNameRange     '0.5.0' ] ]
+148 verbose addNamed [ 'mkdirp', '0.5.0' ]
+149 verbose addNamed [ '0.5.0', '0.5.0' ]
+150 silly lockFile bf9ae38d-mkdirp-0-5-0 mkdirp@0.5.0
+151 verbose lock mkdirp@0.5.0 /home/jack/.npm/bf9ae38d-mkdirp-0-5-0.lock
+152 silly lockFile bf9ae38d-mkdirp-0-5-0 mkdirp@0.5.0
+153 silly lockFile bf9ae38d-mkdirp-0-5-0 mkdirp@0.5.0
+154 silly lockFile 3880d7a6-mkdirp-0-5-0 mkdirp@~0.5.0
+155 silly lockFile 3880d7a6-mkdirp-0-5-0 mkdirp@~0.5.0
+156 http 304 https://registry.npmjs.org/rimraf
+157 silly registry.get cb [ 304,
+157 silly registry.get   { date: 'Mon, 16 Feb 2015 22:08:45 GMT',
+157 silly registry.get     server: 'Apache',
+157 silly registry.get     via: '1.1 varnish',
+157 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 22:08:04 GMT',
+157 silly registry.get     'cache-control': 'max-age=60',
+157 silly registry.get     etag: '"7J30EAXMM9QV6NUKKAYOR0ZJB"',
+157 silly registry.get     age: '54',
+157 silly registry.get     'x-served-by': 'cache-atl6228-ATL',
+157 silly registry.get     'x-cache': 'HIT',
+157 silly registry.get     'x-cache-hits': '5',
+157 silly registry.get     'x-timer': 'S1424124525.622935,VS0,VE0',
+157 silly registry.get     vary: 'Accept',
+157 silly registry.get     'content-length': '0',
+157 silly registry.get     'keep-alive': 'timeout=10, max=50',
+157 silly registry.get     connection: 'Keep-Alive' } ]
+158 verbose etag https://registry.npmjs.org/rimraf from cache
+159 silly addNameRange number 2 { name: 'rimraf', range: '>=2.2.8-0 <2.3.0-0', hasData: true }
+160 silly addNameRange versions [ 'rimraf',
+160 silly addNameRange   [ '1.0.0',
+160 silly addNameRange     '1.0.1',
+160 silly addNameRange     '1.0.2',
+160 silly addNameRange     '1.0.4',
+160 silly addNameRange     '1.0.5',
+160 silly addNameRange     '1.0.6',
+160 silly addNameRange     '1.0.7',
+160 silly addNameRange     '1.0.8',
+160 silly addNameRange     '1.0.9',
+160 silly addNameRange     '2.0.0',
+160 silly addNameRange     '2.0.1',
+160 silly addNameRange     '2.0.2',
+160 silly addNameRange     '2.0.3',
+160 silly addNameRange     '2.1.0',
+160 silly addNameRange     '2.1.1',
+160 silly addNameRange     '2.1.2',
+160 silly addNameRange     '2.1.3',
+160 silly addNameRange     '2.1.4',
+160 silly addNameRange     '2.2.0',
+160 silly addNameRange     '2.2.1',
+160 silly addNameRange     '2.2.2',
+160 silly addNameRange     '2.2.3',
+160 silly addNameRange     '2.2.4',
+160 silly addNameRange     '2.2.5',
+160 silly addNameRange     '2.2.6',
+160 silly addNameRange     '2.2.8' ] ]
+161 verbose addNamed [ 'rimraf', '2.2.8' ]
+162 verbose addNamed [ '2.2.8', '2.2.8' ]
+163 silly lockFile b87241a4-rimraf-2-2-8 rimraf@2.2.8
+164 verbose lock rimraf@2.2.8 /home/jack/.npm/b87241a4-rimraf-2-2-8.lock
+165 silly lockFile b87241a4-rimraf-2-2-8 rimraf@2.2.8
+166 silly lockFile b87241a4-rimraf-2-2-8 rimraf@2.2.8
+167 silly lockFile 63346313-rimraf-2-2-8 rimraf@~2.2.8
+168 silly lockFile 63346313-rimraf-2-2-8 rimraf@~2.2.8
+169 http 200 https://registry.npmjs.org/ncp
+170 silly registry.get cb [ 200,
+170 silly registry.get   { date: 'Mon, 16 Feb 2015 22:08:45 GMT',
+170 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+170 silly registry.get     etag: '"1H4NI06M8PMFG0CHAIYE7PK9Q"',
+170 silly registry.get     'content-type': 'application/json',
+170 silly registry.get     'cache-control': 'max-age=60',
+170 silly registry.get     'content-length': '25190',
+170 silly registry.get     'accept-ranges': 'bytes',
+170 silly registry.get     via: '1.1 varnish',
+170 silly registry.get     age: '53',
+170 silly registry.get     'x-served-by': 'cache-atl6223-ATL',
+170 silly registry.get     'x-cache': 'HIT',
+170 silly registry.get     'x-cache-hits': '3',
+170 silly registry.get     'x-timer': 'S1424124525.618116,VS0,VE0',
+170 silly registry.get     vary: 'Accept',
+170 silly registry.get     'keep-alive': 'timeout=10, max=50',
+170 silly registry.get     connection: 'Keep-Alive' } ]
+171 silly addNameRange number 2 { name: 'ncp', range: '>=0.6.0-0 <0.7.0-0', hasData: true }
+172 silly addNameRange versions [ 'ncp',
+172 silly addNameRange   [ '0.0.0',
+172 silly addNameRange     '0.0.1',
+172 silly addNameRange     '0.0.2',
+172 silly addNameRange     '0.1.0',
+172 silly addNameRange     '0.1.1',
+172 silly addNameRange     '0.1.2',
+172 silly addNameRange     '0.2.0',
+172 silly addNameRange     '0.2.1',
+172 silly addNameRange     '0.2.2',
+172 silly addNameRange     '0.2.3',
+172 silly addNameRange     '0.2.4',
+172 silly addNameRange     '0.2.5',
+172 silly addNameRange     '0.2.6',
+172 silly addNameRange     '0.3.0',
+172 silly addNameRange     '0.4.0',
+172 silly addNameRange     '0.2.7',
+172 silly addNameRange     '0.4.1',
+172 silly addNameRange     '0.4.2',
+172 silly addNameRange     '0.5.0',
+172 silly addNameRange     '0.5.1',
+172 silly addNameRange     '0.6.0',
+172 silly addNameRange     '1.0.0',
+172 silly addNameRange     '1.0.1' ] ]
+173 verbose addNamed [ 'ncp', '0.6.0' ]
+174 verbose addNamed [ '0.6.0', '0.6.0' ]
+175 silly lockFile 8a9ef8b5-ncp-0-6-0 ncp@0.6.0
+176 verbose lock ncp@0.6.0 /home/jack/.npm/8a9ef8b5-ncp-0-6-0.lock
+177 silly lockFile b88e6313-stry-npmjs-org-ncp-ncp-0-6-0-tgz https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz
+178 verbose lock https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz /home/jack/.npm/b88e6313-stry-npmjs-org-ncp-ncp-0-6-0-tgz.lock
+179 verbose addRemoteTarball [ 'https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz',
+179 verbose addRemoteTarball   'df8ce021e262be21b52feb3d3e5cfaab12491f0d' ]
+180 info retry fetch attempt 1 at 17:08:46
+181 verbose fetch to= /tmp/npm-7138-KrswOvbY/registry.npmjs.org/ncp/-/ncp-0.6.0.tgz
+182 http GET https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz
+183 http 200 https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz
+184 silly lockFile b88e6313-stry-npmjs-org-ncp-ncp-0-6-0-tgz https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz
+185 silly lockFile b88e6313-stry-npmjs-org-ncp-ncp-0-6-0-tgz https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz
+186 silly lockFile 8a9ef8b5-ncp-0-6-0 ncp@0.6.0
+187 silly lockFile 8a9ef8b5-ncp-0-6-0 ncp@0.6.0
+188 silly lockFile d9d11154-ncp-0-6-0 ncp@~0.6.0
+189 silly lockFile d9d11154-ncp-0-6-0 ncp@~0.6.0
+190 silly resolved [ { name: 'mkdirp',
+190 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+190 silly resolved     version: '0.5.0',
+190 silly resolved     author:
+190 silly resolved      { name: 'James Halliday',
+190 silly resolved        email: 'mail@substack.net',
+190 silly resolved        url: 'http://substack.net' },
+190 silly resolved     main: './index',
+190 silly resolved     keywords: [ 'mkdir', 'directory' ],
+190 silly resolved     repository:
+190 silly resolved      { type: 'git',
+190 silly resolved        url: 'https://github.com/substack/node-mkdirp.git' },
+190 silly resolved     scripts: { test: 'tap test/*.js' },
+190 silly resolved     dependencies: { minimist: '0.0.8' },
+190 silly resolved     devDependencies: { tap: '~0.4.0', 'mock-fs': '~2.2.0' },
+190 silly resolved     bin: { mkdirp: 'bin/cmd.js' },
+190 silly resolved     license: 'MIT',
+190 silly resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+190 silly resolved     homepage: 'https://github.com/substack/node-mkdirp',
+190 silly resolved     _id: 'mkdirp@0.5.0',
+190 silly resolved     dist:
+190 silly resolved      { shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+190 silly resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz' },
+190 silly resolved     _from: 'mkdirp@~0.5.0',
+190 silly resolved     _npmVersion: '1.4.3',
+190 silly resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+190 silly resolved     maintainers: [ [Object] ],
+190 silly resolved     directories: {},
+190 silly resolved     _shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+190 silly resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz',
+190 silly resolved     readme: 'ERROR: No README data found!' },
+190 silly resolved   { name: 'rimraf',
+190 silly resolved     version: '2.2.8',
+190 silly resolved     main: 'rimraf.js',
+190 silly resolved     description: 'A deep deletion module for node (like `rm -rf`)',
+190 silly resolved     author:
+190 silly resolved      { name: 'Isaac Z. Schlueter',
+190 silly resolved        email: 'i@izs.me',
+190 silly resolved        url: 'http://blog.izs.me/' },
+190 silly resolved     license:
+190 silly resolved      { type: 'MIT',
+190 silly resolved        url: 'https://github.com/isaacs/rimraf/raw/master/LICENSE' },
+190 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/rimraf.git' },
+190 silly resolved     scripts: { test: 'cd test && bash run.sh' },
+190 silly resolved     bin: { rimraf: './bin.js' },
+190 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+190 silly resolved     bugs: { url: 'https://github.com/isaacs/rimraf/issues' },
+190 silly resolved     homepage: 'https://github.com/isaacs/rimraf',
+190 silly resolved     _id: 'rimraf@2.2.8',
+190 silly resolved     _shasum: 'e439be2aaee327321952730f99a8929e4fc50582',
+190 silly resolved     _from: 'rimraf@~2.2.8',
+190 silly resolved     _npmVersion: '1.4.10',
+190 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+190 silly resolved     maintainers: [ [Object] ],
+190 silly resolved     dist:
+190 silly resolved      { shasum: 'e439be2aaee327321952730f99a8929e4fc50582',
+190 silly resolved        tarball: 'http://registry.npmjs.org/rimraf/-/rimraf-2.2.8.tgz' },
+190 silly resolved     directories: {},
+190 silly resolved     _resolved: 'https://registry.npmjs.org/rimraf/-/rimraf-2.2.8.tgz',
+190 silly resolved     readme: 'ERROR: No README data found!' },
+190 silly resolved   { name: 'ncp',
+190 silly resolved     version: '0.6.0',
+190 silly resolved     author: { name: 'AvianFlu', email: 'charlie@charlieistheman.com' },
+190 silly resolved     description: 'Asynchronous recursive file copy utility.',
+190 silly resolved     bin: { ncp: './bin/ncp' },
+190 silly resolved     devDependencies: { mocha: '1.15.x', rimraf: '1.0.x', 'read-dir-files': '0.0.x' },
+190 silly resolved     main: './lib/ncp.js',
+190 silly resolved     repository: { type: 'git', url: 'https://github.com/AvianFlu/ncp.git' },
+190 silly resolved     keywords: [ 'cli', 'copy' ],
+190 silly resolved     license: 'MIT',
+190 silly resolved     engine: { node: '>=0.6' },
+190 silly resolved     scripts: { test: 'mocha -R spec' },
+190 silly resolved     bugs: { url: 'https://github.com/AvianFlu/ncp/issues' },
+190 silly resolved     homepage: 'https://github.com/AvianFlu/ncp',
+190 silly resolved     _id: 'ncp@0.6.0',
+190 silly resolved     dist:
+190 silly resolved      { shasum: 'df8ce021e262be21b52feb3d3e5cfaab12491f0d',
+190 silly resolved        tarball: 'http://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz' },
+190 silly resolved     _from: 'ncp@~0.6.0',
+190 silly resolved     _npmVersion: '1.4.3',
+190 silly resolved     _npmUser: { name: 'avianflu', email: 'charlie@charlieistheman.com' },
+190 silly resolved     maintainers: [ [Object], [Object] ],
+190 silly resolved     directories: {},
+190 silly resolved     _shasum: 'df8ce021e262be21b52feb3d3e5cfaab12491f0d',
+190 silly resolved     _resolved: 'https://registry.npmjs.org/ncp/-/ncp-0.6.0.tgz' } ]
+191 info install mkdirp@0.5.0 into /home/jack/cli_tools/ci-install/node_modules/mv
+192 info install rimraf@2.2.8 into /home/jack/cli_tools/ci-install/node_modules/mv
+193 info install ncp@0.6.0 into /home/jack/cli_tools/ci-install/node_modules/mv
+194 info installOne mkdirp@0.5.0
+195 info installOne rimraf@2.2.8
+196 info installOne ncp@0.6.0
+197 verbose node_modules/mv/node_modules/mkdirp unbuild
+198 verbose node_modules/mv/node_modules/rimraf unbuild
+199 verbose tar unpack /home/jack/.npm/mkdirp/0.5.0/package.tgz
+200 silly lockFile 48c3fe98-e-modules-mv-node-modules-mkdirp tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp
+201 verbose lock tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp /home/jack/.npm/48c3fe98-e-modules-mv-node-modules-mkdirp.lock
+202 silly lockFile 41615b6e-ack-npm-mkdirp-0-5-0-package-tgz tar:///home/jack/.npm/mkdirp/0.5.0/package.tgz
+203 verbose lock tar:///home/jack/.npm/mkdirp/0.5.0/package.tgz /home/jack/.npm/41615b6e-ack-npm-mkdirp-0-5-0-package-tgz.lock
+204 verbose tar unpack /home/jack/.npm/rimraf/2.2.8/package.tgz
+205 silly lockFile 5b8c975f-e-modules-mv-node-modules-rimraf tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/rimraf
+206 verbose lock tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/rimraf /home/jack/.npm/5b8c975f-e-modules-mv-node-modules-rimraf.lock
+207 silly lockFile 1769a158-ack-npm-rimraf-2-2-8-package-tgz tar:///home/jack/.npm/rimraf/2.2.8/package.tgz
+208 verbose lock tar:///home/jack/.npm/rimraf/2.2.8/package.tgz /home/jack/.npm/1769a158-ack-npm-rimraf-2-2-8-package-tgz.lock
+209 verbose node_modules/mv/node_modules/ncp unbuild
+210 silly gunzTarPerm modes [ '775', '664' ]
+211 silly gunzTarPerm modes [ '775', '664' ]
+212 verbose tar unpack /home/jack/.npm/ncp/0.6.0/package.tgz
+213 silly lockFile f07e95e2-node-modules-mv-node-modules-ncp tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/ncp
+214 verbose lock tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/ncp /home/jack/.npm/f07e95e2-node-modules-mv-node-modules-ncp.lock
+215 silly lockFile 6f56c02a-e-jack-npm-ncp-0-6-0-package-tgz tar:///home/jack/.npm/ncp/0.6.0/package.tgz
+216 verbose lock tar:///home/jack/.npm/ncp/0.6.0/package.tgz /home/jack/.npm/6f56c02a-e-jack-npm-ncp-0-6-0-package-tgz.lock
+217 silly gunzTarPerm extractEntry package.json
+218 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+219 silly gunzTarPerm modes [ '775', '664' ]
+220 silly gunzTarPerm extractEntry package.json
+221 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+222 silly gunzTarPerm extractEntry .npmignore
+223 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+224 silly gunzTarPerm extractEntry LICENSE
+225 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+226 silly gunzTarPerm extractEntry README.md
+227 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+228 silly gunzTarPerm extractEntry LICENSE
+229 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+230 silly gunzTarPerm extractEntry package.json
+231 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+232 silly gunzTarPerm extractEntry .npmignore
+233 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+234 silly gunzTarPerm extractEntry README.md
+235 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+236 silly gunzTarPerm extractEntry index.js
+237 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+238 silly gunzTarPerm extractEntry .travis.yml
+239 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+240 silly gunzTarPerm extractEntry bin.js
+241 silly gunzTarPerm modified mode [ 'bin.js', 493, 509 ]
+242 silly gunzTarPerm extractEntry rimraf.js
+243 silly gunzTarPerm modified mode [ 'rimraf.js', 420, 436 ]
+244 silly gunzTarPerm extractEntry .travis.yml
+245 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+246 silly gunzTarPerm extractEntry LICENSE.md
+247 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 436 ]
+248 silly gunzTarPerm extractEntry bin/cmd.js
+249 silly gunzTarPerm modified mode [ 'bin/cmd.js', 493, 509 ]
+250 silly gunzTarPerm extractEntry bin/usage.txt
+251 silly gunzTarPerm modified mode [ 'bin/usage.txt', 420, 436 ]
+252 silly gunzTarPerm extractEntry AUTHORS
+253 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 436 ]
+254 silly gunzTarPerm extractEntry test/test-async.js
+255 silly gunzTarPerm modified mode [ 'test/test-async.js', 420, 436 ]
+256 silly gunzTarPerm extractEntry bin/ncp
+257 silly gunzTarPerm modified mode [ 'bin/ncp', 493, 509 ]
+258 silly gunzTarPerm extractEntry lib/ncp.js
+259 silly gunzTarPerm modified mode [ 'lib/ncp.js', 420, 436 ]
+260 silly gunzTarPerm extractEntry examples/pow.js
+261 silly gunzTarPerm modified mode [ 'examples/pow.js', 420, 436 ]
+262 silly gunzTarPerm extractEntry readme.markdown
+263 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
+264 silly gunzTarPerm extractEntry test/test-sync.js
+265 silly gunzTarPerm modified mode [ 'test/test-sync.js', 420, 436 ]
+266 silly gunzTarPerm extractEntry test/run.sh
+267 silly gunzTarPerm modified mode [ 'test/run.sh', 420, 436 ]
+268 silly gunzTarPerm extractEntry test/setup.sh
+269 silly gunzTarPerm modified mode [ 'test/setup.sh', 420, 436 ]
+270 silly gunzTarPerm extractEntry test/ncp.js
+271 silly gunzTarPerm modified mode [ 'test/ncp.js', 420, 436 ]
+272 silly gunzTarPerm extractEntry test/chmod.js
+273 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 436 ]
+274 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+275 silly gunzTarPerm modified mode [ 'test/opts_fs_sync.js', 420, 436 ]
+276 silly gunzTarPerm extractEntry test/perm.js
+277 silly gunzTarPerm modified mode [ 'test/perm.js', 420, 436 ]
+278 silly gunzTarPerm extractEntry test/perm_sync.js
+279 silly gunzTarPerm modified mode [ 'test/perm_sync.js', 420, 436 ]
+280 silly gunzTarPerm extractEntry test/opts_fs.js
+281 silly gunzTarPerm modified mode [ 'test/opts_fs.js', 420, 436 ]
+282 silly gunzTarPerm extractEntry test/rel.js
+283 silly gunzTarPerm modified mode [ 'test/rel.js', 420, 436 ]
+284 silly gunzTarPerm extractEntry test/return.js
+285 silly gunzTarPerm modified mode [ 'test/return.js', 420, 436 ]
+286 silly gunzTarPerm extractEntry test/return_sync.js
+287 silly gunzTarPerm modified mode [ 'test/return_sync.js', 420, 436 ]
+288 silly gunzTarPerm extractEntry test/root.js
+289 silly gunzTarPerm modified mode [ 'test/root.js', 420, 436 ]
+290 silly gunzTarPerm extractEntry test/sync.js
+291 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 436 ]
+292 silly gunzTarPerm extractEntry test/mkdirp.js
+293 silly gunzTarPerm modified mode [ 'test/mkdirp.js', 420, 436 ]
+294 silly gunzTarPerm extractEntry test/umask.js
+295 silly gunzTarPerm modified mode [ 'test/umask.js', 420, 436 ]
+296 silly gunzTarPerm extractEntry test/clobber.js
+297 silly gunzTarPerm modified mode [ 'test/clobber.js', 420, 436 ]
+298 silly gunzTarPerm extractEntry test/umask_sync.js
+299 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 436 ]
+300 silly gunzTarPerm extractEntry test/race.js
+301 silly gunzTarPerm modified mode [ 'test/race.js', 420, 436 ]
+302 silly gunzTarPerm extractEntry test/regular-fixtures/src/a
+303 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/a', 420, 436 ]
+304 silly gunzTarPerm extractEntry test/regular-fixtures/src/b
+305 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/b', 420, 436 ]
+306 silly gunzTarPerm extractEntry test/regular-fixtures/src/c
+307 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/c', 420, 436 ]
+308 silly gunzTarPerm extractEntry test/regular-fixtures/src/d
+309 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/d', 420, 436 ]
+310 silly gunzTarPerm extractEntry test/regular-fixtures/src/e
+311 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/e', 420, 436 ]
+312 silly gunzTarPerm extractEntry test/regular-fixtures/src/f
+313 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/f', 420, 436 ]
+314 silly gunzTarPerm extractEntry test/regular-fixtures/src/sub/a
+315 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/sub/a', 420, 436 ]
+316 silly gunzTarPerm extractEntry test/regular-fixtures/src/sub/b
+317 silly gunzTarPerm modified mode [ 'test/regular-fixtures/src/sub/b', 420, 436 ]
+318 silly lockFile 5b8c975f-e-modules-mv-node-modules-rimraf tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/rimraf
+319 silly lockFile 5b8c975f-e-modules-mv-node-modules-rimraf tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/rimraf
+320 silly gunzTarPerm extractEntry test/symlink-fixtures/src/dir/bar
+321 silly gunzTarPerm modified mode [ 'test/symlink-fixtures/src/dir/bar', 420, 436 ]
+322 silly gunzTarPerm extractEntry test/symlink-fixtures/src/foo
+323 silly gunzTarPerm modified mode [ 'test/symlink-fixtures/src/foo', 420, 436 ]
+324 silly lockFile 1769a158-ack-npm-rimraf-2-2-8-package-tgz tar:///home/jack/.npm/rimraf/2.2.8/package.tgz
+325 silly lockFile 1769a158-ack-npm-rimraf-2-2-8-package-tgz tar:///home/jack/.npm/rimraf/2.2.8/package.tgz
+326 info preinstall rimraf@2.2.8
+327 verbose readDependencies using package.json deps
+328 verbose readDependencies using package.json deps
+329 silly resolved []
+330 verbose about to build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/rimraf
+331 info build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/rimraf
+332 verbose linkStuff [ false,
+332 verbose linkStuff   false,
+332 verbose linkStuff   false,
+332 verbose linkStuff   '/home/jack/cli_tools/ci-install/node_modules/mv/node_modules' ]
+333 info linkStuff rimraf@2.2.8
+334 verbose linkBins rimraf@2.2.8
+335 verbose link bins [ { rimraf: './bin.js' },
+335 verbose link bins   '/home/jack/cli_tools/ci-install/node_modules/mv/node_modules/.bin',
+335 verbose link bins   false ]
+336 verbose linkMans rimraf@2.2.8
+337 verbose rebuildBundles rimraf@2.2.8
+338 info install rimraf@2.2.8
+339 info postinstall rimraf@2.2.8
+340 silly lockFile f07e95e2-node-modules-mv-node-modules-ncp tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/ncp
+341 silly lockFile f07e95e2-node-modules-mv-node-modules-ncp tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/ncp
+342 silly lockFile 6f56c02a-e-jack-npm-ncp-0-6-0-package-tgz tar:///home/jack/.npm/ncp/0.6.0/package.tgz
+343 silly lockFile 6f56c02a-e-jack-npm-ncp-0-6-0-package-tgz tar:///home/jack/.npm/ncp/0.6.0/package.tgz
+344 info preinstall ncp@0.6.0
+345 verbose readDependencies using package.json deps
+346 verbose readDependencies using package.json deps
+347 silly resolved []
+348 verbose about to build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/ncp
+349 info build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/ncp
+350 verbose linkStuff [ false,
+350 verbose linkStuff   false,
+350 verbose linkStuff   false,
+350 verbose linkStuff   '/home/jack/cli_tools/ci-install/node_modules/mv/node_modules' ]
+351 info linkStuff ncp@0.6.0
+352 verbose linkBins ncp@0.6.0
+353 verbose link bins [ { ncp: './bin/ncp' },
+353 verbose link bins   '/home/jack/cli_tools/ci-install/node_modules/mv/node_modules/.bin',
+353 verbose link bins   false ]
+354 verbose linkMans ncp@0.6.0
+355 verbose rebuildBundles ncp@0.6.0
+356 info install ncp@0.6.0
+357 info postinstall ncp@0.6.0
+358 silly lockFile 48c3fe98-e-modules-mv-node-modules-mkdirp tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp
+359 silly lockFile 48c3fe98-e-modules-mv-node-modules-mkdirp tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp
+360 silly lockFile 41615b6e-ack-npm-mkdirp-0-5-0-package-tgz tar:///home/jack/.npm/mkdirp/0.5.0/package.tgz
+361 silly lockFile 41615b6e-ack-npm-mkdirp-0-5-0-package-tgz tar:///home/jack/.npm/mkdirp/0.5.0/package.tgz
+362 info preinstall mkdirp@0.5.0
+363 verbose readDependencies using package.json deps
+364 verbose readDependencies using package.json deps
+365 verbose cache add [ 'minimist@0.0.8', null ]
+366 verbose cache add name=undefined spec="minimist@0.0.8" args=["minimist@0.0.8",null]
+367 verbose parsed url { protocol: null,
+367 verbose parsed url   slashes: null,
+367 verbose parsed url   auth: null,
+367 verbose parsed url   host: null,
+367 verbose parsed url   port: null,
+367 verbose parsed url   hostname: null,
+367 verbose parsed url   hash: null,
+367 verbose parsed url   search: null,
+367 verbose parsed url   query: null,
+367 verbose parsed url   pathname: 'minimist@0.0.8',
+367 verbose parsed url   path: 'minimist@0.0.8',
+367 verbose parsed url   href: 'minimist@0.0.8' }
+368 verbose cache add name="minimist" spec="0.0.8" args=["minimist","0.0.8"]
+369 verbose parsed url { protocol: null,
+369 verbose parsed url   slashes: null,
+369 verbose parsed url   auth: null,
+369 verbose parsed url   host: null,
+369 verbose parsed url   port: null,
+369 verbose parsed url   hostname: null,
+369 verbose parsed url   hash: null,
+369 verbose parsed url   search: null,
+369 verbose parsed url   query: null,
+369 verbose parsed url   pathname: '0.0.8',
+369 verbose parsed url   path: '0.0.8',
+369 verbose parsed url   href: '0.0.8' }
+370 verbose addNamed [ 'minimist', '0.0.8' ]
+371 verbose addNamed [ '0.0.8', '0.0.8' ]
+372 silly lockFile 22c6b485-minimist-0-0-8 minimist@0.0.8
+373 verbose lock minimist@0.0.8 /home/jack/.npm/22c6b485-minimist-0-0-8.lock
+374 verbose request where is /minimist
+375 verbose request registry https://registry.npmjs.org/
+376 verbose url raw /minimist
+377 verbose url resolving [ 'https://registry.npmjs.org/', './minimist' ]
+378 verbose url resolved https://registry.npmjs.org/minimist
+379 verbose request where is https://registry.npmjs.org/minimist
+380 info trying registry request attempt 1 at 17:08:49
+381 verbose etag "1XZYUOLJVFPQ6WACA6KDFYTSG"
+382 http GET https://registry.npmjs.org/minimist
+383 http 304 https://registry.npmjs.org/minimist
+384 silly registry.get cb [ 304,
+384 silly registry.get   { date: 'Mon, 16 Feb 2015 22:08:53 GMT',
+384 silly registry.get     server: 'Apache',
+384 silly registry.get     via: '1.1 varnish',
+384 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 22:08:53 GMT',
+384 silly registry.get     'cache-control': 'max-age=60',
+384 silly registry.get     etag: '"1XZYUOLJVFPQ6WACA6KDFYTSG"',
+384 silly registry.get     age: '12',
+384 silly registry.get     'x-served-by': 'cache-atl6224-ATL',
+384 silly registry.get     'x-cache': 'HIT',
+384 silly registry.get     'x-cache-hits': '1',
+384 silly registry.get     'x-timer': 'S1424124533.021715,VS0,VE0',
+384 silly registry.get     vary: 'Accept',
+384 silly registry.get     'content-length': '0',
+384 silly registry.get     'keep-alive': 'timeout=10, max=50',
+384 silly registry.get     connection: 'Keep-Alive' } ]
+385 verbose etag https://registry.npmjs.org/minimist from cache
+386 silly lockFile 22c6b485-minimist-0-0-8 minimist@0.0.8
+387 silly lockFile 22c6b485-minimist-0-0-8 minimist@0.0.8
+388 silly resolved [ { name: 'minimist',
+388 silly resolved     version: '0.0.8',
+388 silly resolved     description: 'parse argument options',
+388 silly resolved     main: 'index.js',
+388 silly resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+388 silly resolved     scripts: { test: 'tap test/*.js' },
+388 silly resolved     testling: { files: 'test/*.js', browsers: [Object] },
+388 silly resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+388 silly resolved     homepage: 'https://github.com/substack/minimist',
+388 silly resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+388 silly resolved     author:
+388 silly resolved      { name: 'James Halliday',
+388 silly resolved        email: 'mail@substack.net',
+388 silly resolved        url: 'http://substack.net' },
+388 silly resolved     license: 'MIT',
+388 silly resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+388 silly resolved     _id: 'minimist@0.0.8',
+388 silly resolved     dist:
+388 silly resolved      { shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+388 silly resolved        tarball: 'http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' },
+388 silly resolved     _from: 'minimist@0.0.8',
+388 silly resolved     _npmVersion: '1.4.3',
+388 silly resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+388 silly resolved     maintainers: [ [Object] ],
+388 silly resolved     directories: {},
+388 silly resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+388 silly resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+388 silly resolved     readme: 'ERROR: No README data found!' } ]
+389 info install minimist@0.0.8 into /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp
+390 info installOne minimist@0.0.8
+391 verbose node_modules/mv/node_modules/mkdirp/node_modules/minimist unbuild
+392 verbose tar unpack /home/jack/.npm/minimist/0.0.8/package.tgz
+393 silly lockFile d530ce63-les-mkdirp-node-modules-minimist tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp/node_modules/minimist
+394 verbose lock tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp/node_modules/minimist /home/jack/.npm/d530ce63-les-mkdirp-node-modules-minimist.lock
+395 silly lockFile 6e3b81f1-k-npm-minimist-0-0-8-package-tgz tar:///home/jack/.npm/minimist/0.0.8/package.tgz
+396 verbose lock tar:///home/jack/.npm/minimist/0.0.8/package.tgz /home/jack/.npm/6e3b81f1-k-npm-minimist-0-0-8-package-tgz.lock
+397 silly gunzTarPerm modes [ '775', '664' ]
+398 silly gunzTarPerm extractEntry package.json
+399 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+400 silly gunzTarPerm extractEntry LICENSE
+401 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+402 silly gunzTarPerm extractEntry index.js
+403 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+404 silly gunzTarPerm extractEntry .travis.yml
+405 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+406 silly gunzTarPerm extractEntry example/parse.js
+407 silly gunzTarPerm modified mode [ 'example/parse.js', 420, 436 ]
+408 silly gunzTarPerm extractEntry readme.markdown
+409 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
+410 silly gunzTarPerm extractEntry test/dash.js
+411 silly gunzTarPerm modified mode [ 'test/dash.js', 420, 436 ]
+412 silly gunzTarPerm extractEntry test/default_bool.js
+413 silly gunzTarPerm modified mode [ 'test/default_bool.js', 420, 436 ]
+414 silly gunzTarPerm extractEntry test/dotted.js
+415 silly gunzTarPerm modified mode [ 'test/dotted.js', 420, 436 ]
+416 silly gunzTarPerm extractEntry test/long.js
+417 silly gunzTarPerm modified mode [ 'test/long.js', 420, 436 ]
+418 silly gunzTarPerm extractEntry test/parse.js
+419 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 436 ]
+420 silly gunzTarPerm extractEntry test/parse_modified.js
+421 silly gunzTarPerm modified mode [ 'test/parse_modified.js', 420, 436 ]
+422 silly gunzTarPerm extractEntry test/short.js
+423 silly gunzTarPerm modified mode [ 'test/short.js', 420, 436 ]
+424 silly gunzTarPerm extractEntry test/whitespace.js
+425 silly gunzTarPerm modified mode [ 'test/whitespace.js', 420, 436 ]
+426 silly lockFile d530ce63-les-mkdirp-node-modules-minimist tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp/node_modules/minimist
+427 silly lockFile d530ce63-les-mkdirp-node-modules-minimist tar:///home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp/node_modules/minimist
+428 silly lockFile 6e3b81f1-k-npm-minimist-0-0-8-package-tgz tar:///home/jack/.npm/minimist/0.0.8/package.tgz
+429 silly lockFile 6e3b81f1-k-npm-minimist-0-0-8-package-tgz tar:///home/jack/.npm/minimist/0.0.8/package.tgz
+430 info preinstall minimist@0.0.8
+431 verbose readDependencies using package.json deps
+432 verbose readDependencies using package.json deps
+433 silly resolved []
+434 verbose about to build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp/node_modules/minimist
+435 info build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp/node_modules/minimist
+436 verbose linkStuff [ false,
+436 verbose linkStuff   false,
+436 verbose linkStuff   false,
+436 verbose linkStuff   '/home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp/node_modules' ]
+437 info linkStuff minimist@0.0.8
+438 verbose linkBins minimist@0.0.8
+439 verbose linkMans minimist@0.0.8
+440 verbose rebuildBundles minimist@0.0.8
+441 info install minimist@0.0.8
+442 info postinstall minimist@0.0.8
+443 verbose about to build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp
+444 info build /home/jack/cli_tools/ci-install/node_modules/mv/node_modules/mkdirp
+445 verbose linkStuff [ false,
+445 verbose linkStuff   false,
+445 verbose linkStuff   false,
+445 verbose linkStuff   '/home/jack/cli_tools/ci-install/node_modules/mv/node_modules' ]
+446 info linkStuff mkdirp@0.5.0
+447 verbose linkBins mkdirp@0.5.0
+448 verbose link bins [ { mkdirp: 'bin/cmd.js' },
+448 verbose link bins   '/home/jack/cli_tools/ci-install/node_modules/mv/node_modules/.bin',
+448 verbose link bins   false ]
+449 verbose linkMans mkdirp@0.5.0
+450 verbose rebuildBundles mkdirp@0.5.0
+451 verbose rebuildBundles [ 'minimist' ]
+452 info install mkdirp@0.5.0
+453 info postinstall mkdirp@0.5.0
+454 verbose about to build /home/jack/cli_tools/ci-install/node_modules/mv
+455 info build /home/jack/cli_tools/ci-install/node_modules/mv
+456 verbose linkStuff [ false,
+456 verbose linkStuff   false,
+456 verbose linkStuff   false,
+456 verbose linkStuff   '/home/jack/cli_tools/ci-install/node_modules' ]
+457 info linkStuff mv@2.0.3
+458 verbose linkBins mv@2.0.3
+459 verbose linkMans mv@2.0.3
+460 verbose rebuildBundles mv@2.0.3
+461 verbose rebuildBundles [ '.bin', 'mkdirp', 'ncp', 'rimraf' ]
+462 info install mv@2.0.3
+463 info postinstall mv@2.0.3
+464 verbose saving { mv: '^2.0.3' }
+465 error Error: EACCES, open '/home/jack/cli_tools/ci-install/package.json'
+465 error  { [Error: EACCES, open '/home/jack/cli_tools/ci-install/package.json']
+465 error   errno: 3,
+465 error   code: 'EACCES',
+465 error   path: '/home/jack/cli_tools/ci-install/package.json' }
+466 error Please try running this command again as root/Administrator.
+467 error System Linux 3.16.0-30-generic
+468 error command "/usr/bin/node" "/usr/bin/npm" "install" "mv" "--save"
+469 error cwd /home/jack/cli_tools/ci-install
+470 error node -v v0.10.33
+471 error npm -v 1.4.28
+472 error path /home/jack/cli_tools/ci-install/package.json
+473 error code EACCES
+474 error errno 3
+475 error stack Error: EACCES, open '/home/jack/cli_tools/ci-install/package.json'
+476 verbose exit [ 3, true ]
