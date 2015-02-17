@@ -17,5 +17,19 @@
   },
   "bin": {
     "ci-install": "ci-install.js"
-  }
+  },
+  "main": "ci-install.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CodeIgniter",
+    "CI",
+    "install",
+    "installer",
+    "2",
+    "2.2.1"
+  ],
+  "license": "MIT"
 }
