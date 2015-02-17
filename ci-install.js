@@ -1,39 +1,72 @@
 #!/usr/bin/env node
 
-var fs = require('fs.extra');
+var fs = require('fs');
 var program = require('commander');
 var request = require('request');
 var unzip = require('unzip');
 var ncp = require('ncp').ncp;
 var rimraf = require('rimraf');
+var progress = require('progress');
+var bar;
 
+/**
+ *
+ * Name: ci-install
+ * Description: Creates a fresh CodeIgniter project in current directory
+ * Author: Jack Vial (https://github.com/jackvial)
+ *
+ */
+
+// Meta
 program
-	.version('0.1.0')
-	.usage('run ci-install to setup CodeIgniter in the current directory')
-	.parse(process.argv);
+    .version('0.1.0')
+    .usage('run \'ci-install\' to setup the lastest stable version of CodeIgniter in the current directory')
+    .parse(process.argv);
+
+function handleResponse(response) {
+    console.log(' Response: ', response.statusCode);
+    console.log(' Size: ', response.headers['content-length']);
+
+    // Create a download progress bar
+    var len = parseInt(response.headers['content-length'], 10);
+    bar = new progress(' Downloading CI: [:bar] :percent :etas', {
+        complete: '=',
+        incomplete: ' ',
+        width: 20,
+        total: len
+    });
+}
+
+function handleDownloadComplete() {
+    console.log(' Unzip Complete');
+
+    // Set concurrency limit
+    ncp.limit = 16;
+
+    // Copy all the files from the directory created
+    // by unzip 
+    ncp("./CodeIgniter-2.2.1/", "./", function(err) {
+        if (err) {
+            return console.error(err);
+        }
+
+        // Remove the old directory
+        rimraf("./CodeIgniter-2.2.1", function() {
+            console.log(' Installation Complete');
+        });
+    });
+}
 
 // Download and unzip CodeIgnitor to the current directory
 request
-	.get('https://github.com/bcit-ci/CodeIgniter/archive/2.2.1.zip')
-  	.on('response', function(response) {
-    	console.log(response.statusCode);
-    	console.log(response.headers['content-type']);
-	})
-  	.pipe(unzip.Extract({ path: './' }))
-  	.on('close', function(){
-  		console.log('unzip finished');
+    .get('https://github.com/bcit-ci/CodeIgniter/archive/2.2.1.zip')
+    .on('response', handleResponse)
+    .on('data', function(chunk) {
 
-		ncp.limit = 16;
- 
-		ncp("./CodeIgniter-2.2.1/", "./", function (err) {
-		 if (err) {
-		   return console.error(err);
-		 }
-		 console.log('done!');
-
-		// Remove the old directory
-		rimraf("./CodeIgniter-2.2.1", function(error){
-			console.log(error);
-		});
-	});
-});
+        // Update the progress bar
+        bar.tick(chunk.length);
+    })
+    .pipe(unzip.Extract({
+        path: './'
+    }))
+    .on('close', handleDownloadComplete);
