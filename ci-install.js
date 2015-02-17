@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var fs = require('fs');
 var program = require('commander');
 var request = require('request');
@@ -45,13 +47,13 @@ function handleDownloadComplete() {
 
     // Copy all the files from the directory created
     // by unzip 
-    ncp("./CodeIgniter-2.2.1/", "./", function(err) {
+    ncp('./CodeIgniter-2.2.1/', './', function(err) {
         if (err) {
             return console.error(err);
         }
 
         // Remove the old directory
-        rimraf("./CodeIgniter-2.2.1", function() {
+        rimraf('./CodeIgniter-2.2.1', function() {
             console.log(' Installation Complete');
         });
     });

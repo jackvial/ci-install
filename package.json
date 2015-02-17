@@ -1,6 +1,6 @@
 {
   "name": "ci-install",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha",
   "description": "An easy to use installer for CodeIgniter",
   "author": "Jack Vial",
   "engines": {
